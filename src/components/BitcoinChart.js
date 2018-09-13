@@ -132,16 +132,16 @@ class BitcoinChart extends Component {
   render() {
     const options = {
       title: {
-        text: "Solar Employment Growth by Sector, 2010-2016"
+        text: "BitCoin"
       },
 
       subtitle: {
-        text: "Source: thesolarfoundation.com"
+        text: "Source: eugenezheng0208@gmail.com"
       },
 
       yAxis: {
         title: {
-          text: "Number of Employees"
+          text: "Price"
         }
       },
       legend: {
