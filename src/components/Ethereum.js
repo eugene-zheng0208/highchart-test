@@ -108,10 +108,10 @@ class Ethereum extends Component {
           low: []
         };
         data.Data.map(cur => {
-          value.open.push(cur.open);
-          value.close.push(cur.close);
-          value.high.push(cur.high);
-          value.low.push(cur.low);
+          value.open.push([new Date(cur.time * 1000).toString(), cur.open]);
+          value.close.push([new Date(cur.time * 1000).toString(), cur.close]);
+          value.high.push([new Date(cur.time * 1000).toString(), cur.high]);
+          value.low.push([new Date(cur.time * 1000).toString(), cur.low]);
 
           return value;
         });
@@ -137,6 +137,11 @@ class Ethereum extends Component {
 
       subtitle: {
         text: "Source: eugenezheng0208@gmail.com"
+      },
+
+      xAxis: {
+        type: "category",
+        tickInterval: 7 // one week
       },
 
       yAxis: {
