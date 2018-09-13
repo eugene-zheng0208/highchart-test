@@ -130,7 +130,6 @@ class BitcoinChart extends Component {
   }
 
   render() {
-    // console.log(this.state.value.open);
     const options = {
       title: {
         text: "Solar Employment Growth by Sector, 2010-2016"

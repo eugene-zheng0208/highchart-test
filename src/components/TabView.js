@@ -76,13 +76,6 @@ class TabView extends Component {
       </div>
     );
   }
-  // render() {
-  //     return (
-  //         <div>
-
-  //         </div>
-  //     );
-  // }
 }
 
 export default TabView;
